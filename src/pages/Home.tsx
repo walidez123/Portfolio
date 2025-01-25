@@ -4,9 +4,10 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const codeString = `const developer = {
-  name: 'John Doe',
+  name: 'Waleed Shabaan',
   title: 'Full Stack Developer',
-  skills: ['React', 'Node.js', 'TypeScript', 'MongoDB'],
+  skills: ['React', 'Node.js', 'TypeScript', 'MongoDB',
+           'PHP', 'Laravel' , 'MySQL' , 'HTML', 'CSS'],
   passion: 'Building beautiful web applications',
 };
 

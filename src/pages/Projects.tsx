@@ -16,39 +16,34 @@ const projects = {
       "Order management and tracking",
       "Admin dashboard for product management"
     ],
-    github: "https://github.com",
-    live: "https://example.com"
+    github: "https://github.com/walidez123/MERN-store",
+    live: "not available live for now"
   },
-  'chat-app': {
-    title: "AI Chat Application",
-    description: "Real-time chat application powered by artificial intelligence",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=2095&q=80",
-    tags: ["TypeScript", "OpenAI", "WebSocket", "Redis"],
-    features: [
-      "Real-time messaging with WebSocket",
-      "AI-powered chat suggestions",
-      "Message history and search",
-      "User presence indicators",
-      "File sharing and media support",
-      "Responsive design for mobile devices"
-    ],
-    github: "https://github.com",
-    live: "https://example.com"
-  },
+  // 'chat-app': {
+  //   title: "AI Chat Application",
+  //   description: "Real-time chat application powered by artificial intelligence",
+  //   image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=2095&q=80",
+  //   tags: ["TypeScript", "OpenAI", "WebSocket", "Redis"],
+  //   features: [
+  //     "Real-time messaging with WebSocket",
+  //     "AI-powered chat suggestions",
+  //     "Message history and search",
+  //     "User presence indicators",
+  //     "File sharing and media support",
+  //     "Responsive design for mobile devices"
+  //   ],
+  //   github: "https://github.com",
+  //   live: "https://example.com"
+  // },
   'portfolio': {
-    title: "Portfolio Generator",
-    description: "Dynamic portfolio generator for developers",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2015&q=80",
+    title: "VS Code Themed Portfolio",
+    description: "Portfolio that resembles the famouse editor VS code",
+    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["React", "Tailwind", "Framer Motion"],
     features: [
-      "Customizable templates",
-      "Project showcase section",
-      "Blog integration",
-      "Contact form with email notifications",
-      "SEO optimization",
-      "Analytics dashboard"
+      "Looks like vs code",
     ],
-    github: "https://github.com",
+    github: "https://github.com/walidez123/Portfolio",
     live: "https://example.com"
   }
 };
@@ -58,7 +53,7 @@ export default function Projects() {
   const project = id ? projects[id as keyof typeof projects] : null;
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <div>Project isnt available yet</div>;
   }
 
   return (
@@ -113,15 +108,16 @@ export default function Projects() {
                 <Github className="w-5 h-5" />
                 View Code
               </a>
-              <a
-                href={project.live}
-                target="_blank"
+              <button 
+                // href={project.live}
+                // target="_blank"
+                disabled
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center gap-2  transition-colors"
               >
                 <ExternalLink className="w-5 h-5" />
-                Live Demo
-              </a>
+                sorry live demo isnt available for now
+              </button>
             </div>
           </div>
         </div>

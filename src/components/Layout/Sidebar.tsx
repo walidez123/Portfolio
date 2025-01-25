@@ -25,10 +25,10 @@ const sidebarItems = [
       { id: 'project3', title: 'Portfolio.tsx', path: '/projects/portfolio' },
     ],
   },
-  { id: 'blog', title: 'Blog.md', path: '/blog', icon: FileText },
-  { id: 'github', title: 'Github.yml', path: '/github', icon: FolderGit2 },
-  { id: 'contact', title: 'Contact.jsx', path: '/contact', icon: Mail },
-  { id: 'dashboard', title: 'Dashboard.tsx', path: '/dashboard', icon: Settings },
+  // { id: 'blog', title: 'Blog.md', path: '/blog', icon: FileText },
+  // { id: 'github', title: 'Github.yml', path: '/github', icon: FolderGit2 },
+  // { id: 'contact', title: 'Contact.jsx', path: '/contact', icon: Mail },
+  // { id: 'dashboard', title: 'Dashboard.tsx', path: '/dashboard', icon: Settings },
 ];
 
 export default function Sidebar() {

@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import authRoutes from './routes/auth.js';
 import projectRoutes from './routes/projects.js';
 import messageRoutes from './routes/messages.js';
+import WebsiteSetting from "./routes/websiteSettingRouter.js"
 import { errorHandler } from './middleware/errorHandler.js';
 
 dotenv.config();
@@ -17,9 +18,13 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get('/', (req,res) =>{
+  res.send("Welcome")
+})
 app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/messages', messageRoutes);
+app.use('/api/WebsiteSetting', WebsiteSetting);
 
 // Error handling
 app.use(errorHandler);

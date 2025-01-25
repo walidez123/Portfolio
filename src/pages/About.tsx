@@ -3,8 +3,8 @@ import { Code2, Coffee, Globe, Laptop } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { name: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'] },
-    { name: 'Backend', items: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL'] },
+    { name: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue'] },
+    { name: 'Backend', items: ['Node.js', 'PHP','Laravel', 'Express', 'MongoDB', 'PostgreSQL'] },
     { name: 'Tools', items: ['Git', 'Docker', 'VS Code', 'Figma'] },
     { name: 'Other', items: ['AWS', 'CI/CD', 'Testing', 'Agile'] },
   ];
@@ -24,34 +24,31 @@ export default function About() {
         <div className="bg-[#1e1e1e] rounded-lg p-6 space-y-6">
           <div className="flex items-center space-x-4">
             <img
-              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=200&h=200"
+              src="https://pbs.twimg.com/profile_images/1853914807323258880/90vp4OtP_400x400.jpg"
               alt="Profile"
               className="w-20 h-20 rounded-full"
             />
             <div>
-              <h2 className="text-2xl font-bold">John Doe</h2>
+              <h2 className="text-2xl font-bold">Waleed Shabaan</h2>
               <p className="text-gray-400">Full Stack Developer</p>
             </div>
           </div>
 
           <p className="text-gray-300 leading-relaxed">
-            I'm a passionate full-stack developer with 5 years of experience in building
-            modern web applications. I specialize in React, Node.js, and cloud technologies.
+            I'm a passionate full-stack developer with experience in building
+            modern web applications. I specialize in React, Node.js,Laravel 
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex items-center space-x-3 text-gray-300">
               <Globe className="w-5 h-5 text-blue-500" />
-              <span>Based in San Francisco, CA</span>
+              <span>Based in Cairo Egypt</span>
             </div>
             <div className="flex items-center space-x-3 text-gray-300">
               <Laptop className="w-5 h-5 text-green-500" />
-              <span>Available for remote work</span>
+              <span>Available for remote or on Location work</span>
             </div>
-            <div className="flex items-center space-x-3 text-gray-300">
-              <Coffee className="w-5 h-5 text-yellow-500" />
-              <span>Coffee enthusiast</span>
-            </div>
+            
           </div>
         </div>
 
