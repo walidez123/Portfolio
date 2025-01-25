@@ -27,7 +27,7 @@ const projects = {
     features: [
       "Live tracking with web socket in nodejs",
     ],
-    github: "https://github.com/walidez123/futurefood-tracking",
+    github: "",
     live: "not available live for now"
   },
   // 'chat-app': {
