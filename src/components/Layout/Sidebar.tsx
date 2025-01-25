@@ -24,6 +24,7 @@ const sidebarItems = [
       { id: 'project1', title: 'E-Commerce.tsx', path: '/projects/e-commerce' },
       { id: 'project2', title: 'ChatApp.tsx', path: '/projects/chat-app' },
       { id: 'project3', title: 'Portfolio.tsx', path: '/projects/portfolio' },
+      { id: 'project4', title: 'Tracking.tsx', path: '/projects/tracking' },
     ],
   },
   // { id: 'blog', title: 'Blog.md', path: '/blog', icon: FileText },

@@ -19,6 +19,17 @@ const projects = {
     github: "https://github.com/walidez123/MERN-store",
     live: "not available live for now"
   },
+  'tracking': {
+    title: "tracking",
+    description: "i made the live tracking part in this project using Web Socket",
+    image: "https://www.donskytech.com/wp-content/uploads/2022/09/Using-WebSocket-in-the-Internet-of-Things-IOT-projects-WebSockets.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
+    tags: ["Node.js", "Web Socket"],
+    features: [
+      "Live tracking with web socket in nodejs",
+    ],
+    github: "https://github.com/walidez123/futurefood-tracking",
+    live: "not available live for now"
+  },
   // 'chat-app': {
   //   title: "AI Chat Application",
   //   description: "Real-time chat application powered by artificial intelligence",
