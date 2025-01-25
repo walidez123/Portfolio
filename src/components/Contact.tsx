@@ -4,7 +4,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -12,14 +12,15 @@ export default function Contact() {
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get in Touch</h2>
             <p className="text-gray-600">
               Have a project in mind? Let's discuss how we can work together.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            {/* Contact Form */}
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
               <form className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -60,7 +61,8 @@ export default function Contact() {
               </form>
             </div>
 
-            <div className="space-y-8">
+            {/* Contact Information */}
+            <div className="space-y-6 sm:space-y-8">
               <div className="bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4">
                   <div className="bg-purple-100 p-3 rounded-full">

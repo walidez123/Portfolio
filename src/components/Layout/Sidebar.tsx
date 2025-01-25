@@ -11,6 +11,7 @@ import {
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTabStore } from '../../store/useTabStore';
+import { div } from 'framer-motion/client';
 
 const sidebarItems = [
   { id: 'home', title: 'Home.jsx', path: '/', icon: Home },
@@ -62,7 +63,8 @@ export default function Sidebar() {
     const Icon = item.icon;
 
     return (
-      <div key={item.id}>
+      <div className='h-full'>
+        <div key={item.id}>
         <Link
           to={item.path || '#'}
           onClick={() => handleItemClick(item)}
@@ -94,11 +96,12 @@ export default function Sidebar() {
           </div>
         )}
       </div>
+      </div>
     );
   };
 
   return (
-    <div className="w-64 bg-[#1e1e1e] border-r border-[#2d2d2d] flex flex-col overflow-y-auto">
+    <div className="w-64 min-h-screen bg-[#1e1e1e] border-r border-[#2d2d2d] flex flex-col overflow-y-auto">
       {sidebarItems.map((item) => renderSidebarItem(item))}
     </div>
   );

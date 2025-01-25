@@ -12,10 +12,7 @@ export default function TabBar() {
     navigate(path);
   };
 
-  const handleTabClose = (
-    e: React.MouseEvent,
-    id: string
-  ) => {
+  const handleTabClose = (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
     removeTab(id);
   };
@@ -34,7 +31,9 @@ export default function TabBar() {
           }`}
           onClick={() => handleTabClick(tab.id, tab.path)}
         >
-          <span className="text-gray-400">{tab.title}</span>
+          <span className="text-gray-400 text-xl p-4 truncate max-w-[120px] sm:max-w-[200px]">
+            {tab.title}
+          </span>
           <button
             className="ml-2 p-1 rounded-sm opacity-0 group-hover:opacity-100 hover:bg-[#3d3d3d]"
             onClick={(e) => handleTabClose(e, tab.id)}

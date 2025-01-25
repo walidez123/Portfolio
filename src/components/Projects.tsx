@@ -31,21 +31,21 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and experience
             in building modern web applications.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -81,7 +81,7 @@ export default function Projects() {
                     className="flex items-center gap-2 text-gray-600 hover:text-purple-600 transition-colors"
                   >
                     <Github className="w-4 h-4" />
-                    Code
+                    <span className="text-sm">Code</span>
                   </a>
                   <a 
                     href={project.live}
@@ -90,7 +90,7 @@ export default function Projects() {
                     className="flex items-center gap-2 text-gray-600 hover:text-purple-600 transition-colors"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Live Demo
+                    <span className="text-sm">Live Demo</span>
                   </a>
                 </div>
               </div>
