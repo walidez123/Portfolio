@@ -3,8 +3,8 @@ import { Code2, Globe, Laptop } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { name: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue'] },
-    { name: 'Backend', items: ['Node.js', 'PHP', 'Laravel', 'Express', 'MongoDB', 'PostgreSQL'] },
+    { name: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue', "Redux","Zustand" ] },
+    { name: 'Backend', items: ['Node.js', 'PHP', 'Laravel', 'Express', 'MongoDB', 'PostgreSQL',"MySQL" ,"Redis"] },
     { name: 'Tools', items: [ "Web Socket",'Git', 'Docker', 'Figma', 'APIs for mobile applications','Firebase', 'Postman'] },
     { name: 'Other', items: ['AWS', 'CI/CD', 'Testing', 'Agile'] },
   ];
