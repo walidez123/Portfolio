@@ -30,22 +30,20 @@ const projects = {
     github: "https://github.com/walidez123/live-tracking",
     live: "not available live for now"
   },
-  // 'chat-app': {
-  //   title: "AI Chat Application",
-  //   description: "Real-time chat application powered by artificial intelligence",
-  //   image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=2095&q=80",
-  //   tags: ["TypeScript", "OpenAI", "WebSocket", "Redis"],
-  //   features: [
-  //     "Real-time messaging with WebSocket",
-  //     "AI-powered chat suggestions",
-  //     "Message history and search",
-  //     "User presence indicators",
-  //     "File sharing and media support",
-  //     "Responsive design for mobile devices"
-  //   ],
-  //   github: "https://github.com",
-  //   live: "https://example.com"
-  // },
+  'chat-app': {
+    title: "Chat Application",
+    description: "Real-time chat application powered by socket.io",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=2095&q=80",
+    tags: ["javaScript", "OpenAI", "WebSocket"],
+    features: [
+      "Real-time messaging with WebSocket",
+      "Message history and search",
+      "File sharing and media support",
+      "Responsive design for mobile devices"
+    ],
+    github: "https://github.com/walidez123/chat-app",
+    live: "not available live for now"
+  },
   'portfolio': {
     title: "VS Code Themed Portfolio",
     description: "Portfolio that resembles the famouse editor VS code",
