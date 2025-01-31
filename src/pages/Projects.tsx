@@ -33,8 +33,8 @@ const projects = {
   'chat-app': {
     title: "Chat Application",
     description: "Real-time chat application powered by socket.io",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=2095&q=80",
-    tags: ["javaScript", "OpenAI", "WebSocket"],
+    image: "https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["javaScript", "OpenAI", "WebSocket","daisey ui"],
     features: [
       "Real-time messaging with WebSocket",
       "Message history and search",
