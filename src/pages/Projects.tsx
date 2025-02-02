@@ -55,15 +55,15 @@ const projects = {
     github: "https://github.com/walidez123/Portfolio",
     live: "https://example.com"
   },
-  'inventory': {
-    title: "inventory managment (under development)",
+  'OMS': {
+    title: "Order managment system",
     description: "inventory management system",
     image: "https://cdn.shopify.com/s/files/1/1246/6441/articles/Inventory_Specialist.png?v=1727354902",
     tags: ["React", "Tailwind" , 'daiseyUi', "laravel" , "MySQL" ],
     features: [
       "easy to use",
     ],
-    github: "https://github.com/walidez123/inventory",
+    github: "https://github.com/walidez123/OMS",
     live: "https://example.com"
   },
 };
